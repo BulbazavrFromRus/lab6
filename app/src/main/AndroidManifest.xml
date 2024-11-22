@@ -16,6 +16,7 @@
             android:name=".SecondActivity"
             android:exported="false"
             android:theme="@style/Theme.Lab6" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -25,15 +26,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity> <!-- Оставляем только одну запись для ActivityAbout -->
+
+
         <activity
             android:name=".ActivityAbout"
-            android:label="@string/about_title"
+
+
             android:parentActivityName=".MainActivity"
-            android:theme="@android:style/Theme.Holo.Light.DarkActionBar">
+
+
+
+            android:label="@string/about_title"
+            android:theme="@style/CustomTheme"
+            >
+
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".MainActivity"
+                />
         </activity>
+
+
     </application>
+
 
 </manifest>

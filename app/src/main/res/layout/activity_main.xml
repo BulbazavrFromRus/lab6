@@ -40,18 +40,21 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
+
         android:id="@+id/editTextText_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="400dp"
         android:ems="10"
         android:inputType="text"
-        android:text="To whome"
+        android:text=""
         app:layout_constraintBottom_toTopOf="@+id/editTextText_description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.746"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/Numbers"
+        />
 
     <EditText
         android:id="@+id/editTextText_description"
@@ -64,7 +67,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.746"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/Numbers"
+        />
 
     <Button
         android:id="@+id/button_transfer"
@@ -88,6 +93,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.746"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText_description" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextText_description"
+        style="@style/Numbers"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
